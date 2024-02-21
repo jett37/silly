@@ -1,0 +1,479 @@
+.rock-3d-regular {
+  font-family: "Rock 3D", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-moonrocks-regular {
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-microbe-regular {
+  font-family: "Rubik Microbe", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-maze-regular {
+  font-family: "Rubik Maze", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-glitch pop-regular {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-gemstones-regular {
+  font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-doodle triangles-regular {
+  font-family: "Rubik Doodle Triangles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-doodle shadow-regular {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-distressed-regular {
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-burned-regular {
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-broken fax-regular {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-beastly-regular {
+  font-family: "Rubik Beastly", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Spinstee", sans-serif;
+  src: url("https://jett37.github.io/hosted-assets/Spinstee.tff");
+}
+
+* {
+  box-sizing: border-box;}
+
+.container {  display: grid;
+  grid-template-columns: 0.4fr 1.6fr 0.6fr 2fr 1fr 0.4fr;
+  grid-template-rows: 1.2fr 0.5fr 1.6fr 0.7fr 1fr 1.2fr 0.8fr;
+  gap: 20px 20px;
+  grid-auto-flow: column;
+  justify-content: column;
+  grid-template-areas:
+    "header header header header header header"
+    "side1 img1 . about-me gallery side2"
+    "side1 img1 p1 p1 gallery side2"
+    "side1 website-purpose p1 p1 gallery side2"
+    "side1 p2 p2 p2 img2 side2"
+    "side1 p2 p2 p2 img2 side2"
+    "footer footer footer footer footer footer";
+    width: 100%;
+    padding: 10px;}
+
+.header {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 10px 3px ; 
+  grid-template-areas: 
+    "title-screen title-screen title-screen title-screen title-screen title-screen"
+    "title-screen title-screen title-screen title-screen title-screen title-screen"
+    "nav nav nav nav nav nav";
+  grid-area: header;
+  display: inline block;
+  width: 100%;
+  align-items: bottom;}
+
+.nav{  display: grid;
+  grid-area: nav;
+   gap: 10px 3px ;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+   grid-template-rows: 1fr; 
+  grid-template-areas: "aboutme dd-link1 dd-link2 dd-link3 art-blog-link contact-link";
+  display: inline block;
+  align-items: bottom;
+  width: 100%;}
+
+.title-screen {grid-area: title-screen;
+background: #0a0a23;
+ background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7fedb453-4d45-4e48-99fb-3d2d54251d5e/dgq5in8-af7260ca-f1d3-4913-8d61-33804012d807.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdmZWRiNDUzLTRkNDUtNGU0OC05OWZiLTNkMmQ1NDI1MWQ1ZVwvZGdxNWluOC1hZjcyNjBjYS1mMWQzLTQ5MTMtOGQ2MS0zMzgwNDAxMmQ4MDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CsyCH5MyOTsRn9x7IbflkuXYSs-_8ablMMrpH34TDpM")}
+
+.aboutme {display: inline block;
+  grid-area: aboutme;}
+
+.dd-link1 {display: inline block;
+  grid-area: dd-link1;
+}
+
+.dd-link2 {display: inline block;
+  grid-area: dd-link2;
+}
+
+.dd-link3 {display: inline block;
+  grid-area: dd-link3;
+}
+
+.art-blog-link {display: inline block;
+  grid-area: art-blog-link;
+}
+
+.contact-link {display: inline block;
+  grid-area: contact-link;
+}
+
+.footer { grid-area: footer;
+  background: #0a0a23;
+ background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7fedb453-4d45-4e48-99fb-3d2d54251d5e/dgq5in8-af7260ca-f1d3-4913-8d61-33804012d807.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdmZWRiNDUzLTRkNDUtNGU0OC05OWZiLTNkMmQ1NDI1MWQ1ZVwvZGdxNWluOC1hZjcyNjBjYS1mMWQzLTQ5MTMtOGQ2MS0zMzgwNDAxMmQ4MDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CsyCH5MyOTsRn9x7IbflkuXYSs-_8ablMMrpH34TDpM")}
+
+.about-me { grid-area: about-me;
+background: #0a0a23;
+background-image: url("https://i1.pickpik.com/photos/901/71/727/milky-way-starry-sky-night-sky-star-preview.jpg")}
+
+.website-purpose { grid-area: website-purpose; 
+background: #0a0a23;
+background-image: url("https://i1.pickpik.com/photos/901/71/727/milky-way-starry-sky-night-sky-star-preview.jpg")}
+
+.img1 { grid-area: img1; 
+background: #0a0a23;
+}
+
+.p2 { grid-area: p2; 
+background: #0a0a23;}
+
+.side1 { grid-area: side1; 
+background: #0a0a23;
+ background-image: url("https://i1.pickpik.com/photos/901/71/727/milky-way-starry-sky-night-sky-star-preview.jpg")}
+
+.side2 { grid-area: side2; 
+background: #0a0a23;
+ background-image: url("https://i1.pickpik.com/photos/901/71/727/milky-way-starry-sky-night-sky-star-preview.jpg")}
+
+.img2 { grid-area: img2; 
+background: #0a0a23;}
+
+.gallery { grid-area: gallery; 
+background: #0a0a23;
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/A_starry_sky_above_Death_Valley_and_Orionid.jpg")}
+
+.p1 { grid-area: p1; 
+background: #0a0a23;}
+
+
+html, body {
+  height: 100%;
+  margin: 0;}
+
+/* For presentation only, no need to copy the code below */
+
+body{background: #8AA9FE;
+background-image: url("https://i1.pickpik.com/photos/901/71/727/milky-way-starry-sky-night-sky-star-preview.jpg")}
+
+button{
+  border:none;
+  border-radius:5px;
+  height:40px;
+  width:100%;
+  font-size:29px;
+  cursor:pointer;
+  color:#D5E0FE;
+  font-family: "Spinstee", sans-serif;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7fedb453-4d45-4e48-99fb-3d2d54251d5e/dgq5in8-af7260ca-f1d3-4913-8d61-33804012d807.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdmZWRiNDUzLTRkNDUtNGU0OC05OWZiLTNkMmQ1NDI1MWQ1ZVwvZGdxNWluOC1hZjcyNjBjYS1mMWQzLTQ5MTMtOGQ2MS0zMzgwNDAxMmQ4MDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CsyCH5MyOTsRn9x7IbflkuXYSs-_8ablMMrpH34TDpM") 
+
+}
+
+button:hover{
+  background-color:#ddd;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#8AA9FE;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTY1MzktaW1hZ2Uta3d2eWdwODEuanBn.jpg");
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown1{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#8AA9FE;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTY1MzktaW1hZ2Uta3d2eWdwODEuanBn.jpg");
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown2{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#8AA9FE;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTY1MzktaW1hZ2Uta3d2eWdwODEuanBn.jpg");
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+} 
+
+.dropdown3{
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#8AA9FE;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTY1MzktaW1hZ2Uta3d2eWdwODEuanBn.jpg");
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+} 
+
+.dd-link1:hover .dropdown {
+  display: block;
+}
+.dd-link2:hover .dropdown1{
+  display: block;
+}
+.dd-link3:hover .dropdown2{
+  display: block;
+}
+.art-blog-link:hover .dropdown3{
+  display: block;
+}
+.dropdown a {
+  display: block;
+  color: #8AA9FE;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+.dropdown1 a {
+  display: block;
+  color: #8AA9FE;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown1 a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+.dropdown2 a {
+  display: block;
+  color: #8AA9FE;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown2 a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+.dropdown3 a {
+  display: block;
+  color: #8AA9FE;
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown3 a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+#image{padding: 4%;
+width: 100%;
+height: 100%}
+
+#image1{padding: 3%;
+width: 100%;
+height: 100%;}
+
+#image2{padding: 4%;
+width: 100%;
+height: 100%;}
+
+p {text-align: center;}
+
+h1 {text-align: center;
+  font-family: "Spinstee", sans-serif;
+	font-size: 60px;
+text-shadow:  2px 2px 2px Indigo,
+  -3px 2px 2px DodgerBlue, 2px 5px 40px #006,
+	  2px 2px 50px white;}	  
+
+#title{ font-family: "Spinstee", sans-serif;
+  font-size: 100px;
+ color: #0a0a23;
+text-shadow: 2px 2px 2px Indigo,
+  -2px -2px 2px DodgerBlue;}
+
+
+/* If the screen size is 500px wide or less, hide the element */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  
+  *{font-family:""!important;}
+  
+ .container {  
+  display: grid;
+  grid-template-columns: 1.6fr 0.6fr 2fr;
+  grid-template-rows: 1.2fr 1fr 0.5fr 1.6fr 0.7fr 1fr 1.2fr;
+  gap: 20px 20px;
+  grid-auto-flow: column;
+  justify-content: column;
+  grid-template-areas:
+    "header header header"
+    "header header header"
+    "about-me about-me about-me"
+    "p1 p1 p1"
+    "website-purpose website-purpose website-purpose "
+    "p2 p2 p2"
+    "p2 p2 p2";
+    width: 100%;
+    padding: 10px;} 
+  
+  .header {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 10px 3px ; 
+  grid-template-areas: 
+    "title-screen title-screen title-screen title-screen title-screen title-screen"
+    "title-screen title-screen title-screen title-screen title-screen title-screen"
+    "nav nav nav nav nav nav"
+     "nav nav nav nav nav nav";
+  grid-area: header;
+  display: inline block;
+  width: 100%;
+  align-items: bottom;}
+  
+  .nav{inset: 0px 0px 20px 0px;
+  display: list-item;}
+  
+  h1{text-align: center;
+  padding: 50px;}
+  
+  
+  button{
+  border:none;
+  border-radius:5px;
+  height:40px;
+  width:100%;
+  font-size:18px;
+  cursor:pointer;
+  color:#D5E0FE;
+}
+
+button:hover{
+  background-color:#ddd;
+}
+
+  .nav {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#8AA9FE;
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2lzMTY1MzktaW1hZ2Uta3d2eWdwODEuanBn.jpg");
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  align-items: stretch;
+}
+
+.header:hover .nav {
+  display: block; }
+
+.nav a {
+  display: block;
+  color:#8AA9FE;  
+  padding: 5px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.nav a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+  .dropdown{}
+   .dropdown1{}
+    .dropdown2{}
+     .dropdown3{}
+  
+  
+ .aboutme {display: inline block;
+  grid-area: aboutme;}
+
+.dd-link1 {display: inline block;
+  grid-area: dd-link1;}
+
+.dd-link2 {display: inline block;
+  grid-area: dd-link2;
+}
+
+.dd-link3 {display: inline block;
+  grid-area: dd-link3;
+}
+
+.art-blog-link {display: inline block;
+  grid-area: art-blog-link;
+}
+
+.contact-link {display: inline block;
+  grid-area: contact-link;
+}
+  
+  
+  .footer
+  {display: none;}
+  .side1
+  {display: none;}
+  .side2
+  {display: none;}
+  .img1
+  {display: none;}
+  .img2
+  {display: none;}
+  .gallery
+  {display: none;}
+}
