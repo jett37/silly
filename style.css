@@ -77,9 +77,9 @@
 
 @font-face {
     font-family: 'Spinstee';
-    src: url('/assets/fonts/spinstee-xx4a-webfont.woff2') format('woff2'),
-         url('/assets/fonts/spinstee-xx4a-webfont.woff') format('woff'),
-         url('/assets/fonts/spinstee-xx4a-webfont.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jett37/silly/main/assets/fonts/spinstee-xx4a-webfont.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/jett37/silly/main/assets/fonts/spinstee-xx4a-webfont.woff') format('woff'),
+         url('https://raw.githubusercontent.com/jett37/silly/main/assets/fonts/spinstee-xx4a-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
